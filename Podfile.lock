@@ -1,0 +1,13 @@
+PODS:
+  - Google-Mobile-Ads-SDK (7.7.0)
+  - RFMAdSDK (4.1.0)
+
+DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
+  - RFMAdSDK (~> 4.1)
+
+SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: d290e523a6e2f223256abcbf8e0c778b55b1f04e
+  RFMAdSDK: 57083088f9b86de3385cbd910892029f9f283a73
+
+COCOAPODS: 0.39.0

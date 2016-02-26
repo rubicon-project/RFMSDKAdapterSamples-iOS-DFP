@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hud-b8-Ya8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Banner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DFP Banner Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l04-nI-v86">
+                                <rect key="frame" x="188" y="70" width="224" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnW-pw-7LL">
+                                <rect key="frame" x="232" y="167" width="136" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="01u-nm-P5Z"/>
+                                    <constraint firstAttribute="width" constant="136" id="Iy6-Vj-veK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Next Page">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="m5F-Sv-SYd" kind="show" identifier="SecondBanner" id="6rC-an-U5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZQ-Ak-yQQ">
+                                <rect key="frame" x="232" y="129" width="136" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0N4-Rl-U9l"/>
+                                    <constraint firstAttribute="width" constant="136" id="2bE-42-Sgh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Fetch Ad">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPK-y6-gLl"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rVV-HQ-wRp">
+                                <rect key="frame" x="282" y="210" width="37" height="37"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPL-30-0SK" customClass="DFPBannerView">
+                                <rect key="frame" x="140" y="500" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="UPO-A2-R19"/>
+                                    <constraint firstAttribute="height" constant="50" id="nqi-g5-htv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l04-nI-v86" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="C5f-mb-jRk"/>
+                            <constraint firstAttribute="centerX" secondItem="rVV-HQ-wRp" secondAttribute="centerX" id="Fgw-ae-Xg4"/>
+                            <constraint firstItem="rVV-HQ-wRp" firstAttribute="top" secondItem="TnW-pw-7LL" secondAttribute="bottom" constant="13" id="NGw-yf-bGQ"/>
+                            <constraint firstAttribute="bottom" secondItem="jPL-30-0SK" secondAttribute="bottom" constant="50" id="UYd-bZ-0Ov"/>
+                            <constraint firstAttribute="centerX" secondItem="jPL-30-0SK" secondAttribute="centerX" id="b7J-Qp-16X"/>
+                            <constraint firstItem="oZQ-Ak-yQQ" firstAttribute="top" secondItem="l04-nI-v86" secondAttribute="bottom" constant="30" id="eio-NT-Aca"/>
+                            <constraint firstItem="TnW-pw-7LL" firstAttribute="top" secondItem="oZQ-Ak-yQQ" secondAttribute="bottom" constant="8" id="iPt-Jb-stu"/>
+                            <constraint firstAttribute="centerX" secondItem="oZQ-Ak-yQQ" secondAttribute="centerX" id="mQp-RT-4GK"/>
+                            <constraint firstAttribute="centerX" secondItem="TnW-pw-7LL" secondAttribute="centerX" id="qYv-Eq-59J"/>
+                            <constraint firstAttribute="centerX" secondItem="l04-nI-v86" secondAttribute="centerX" id="rFU-Nj-f4m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G5W-LR-Jdp">
+                        <barButtonItem key="leftBarButtonItem" id="HXu-ZU-Fnc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Ia7-Xv-ajY">
+                                <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWZ-ho-PC5"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="FZm-b1-A7j">
+                            <connections>
+                                <action selector="tappedSettings:" destination="BYZ-38-t0r" id="26q-Dd-zWT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="rVV-HQ-wRp" id="xyu-qI-gUa"/>
+                        <outlet property="bannerView" destination="jPL-30-0SK" id="rUl-2d-laY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146" y="-1035"/>
+        </scene>
+        <!--Second Banner View Controller-->
+        <scene sceneID="lr4-eD-S0M">
+            <objects>
+                <viewController id="m5F-Sv-SYd" customClass="SecondBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HJz-g4-aOA"/>
+                        <viewControllerLayoutGuide type="bottom" id="uYz-Br-J6o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nCv-6t-Y7x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DFP Second Banner Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuh-ri-6fh">
+                                <rect key="frame" x="144" y="72" width="312" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="5aT-OI-dfN"/>
+                                    <constraint firstAttribute="width" constant="312" id="MsM-Ql-IeK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qQ-2z-JX8">
+                                <rect key="frame" x="232" y="131" width="136" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="IKn-Fe-VeB"/>
+                                    <constraint firstAttribute="height" constant="30" id="SlM-5z-OUM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Fetch Ad">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAd:" destination="m5F-Sv-SYd" eventType="touchUpInside" id="nlf-14-vll"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="986-7a-nIz">
+                                <rect key="frame" x="282" y="174" width="37" height="37"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhH-wZ-23y" customClass="DFPBannerView">
+                                <rect key="frame" x="140" y="501" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Pp-ro-3pz"/>
+                                    <constraint firstAttribute="width" constant="320" id="DWt-Ik-Ds0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="VsL-JS-kRr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="bvt-eY-paS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="986-7a-nIz" firstAttribute="top" secondItem="5qQ-2z-JX8" secondAttribute="bottom" constant="13" id="B1k-c2-TlZ"/>
+                            <constraint firstAttribute="centerX" secondItem="5qQ-2z-JX8" secondAttribute="centerX" id="SIQ-Sy-JHd"/>
+                            <constraint firstItem="uYz-Br-J6o" firstAttribute="top" secondItem="NhH-wZ-23y" secondAttribute="bottom" id="Ti3-Xt-gnV"/>
+                            <constraint firstAttribute="centerX" secondItem="986-7a-nIz" secondAttribute="centerX" id="dBa-JW-Whs"/>
+                            <constraint firstAttribute="centerX" secondItem="NhH-wZ-23y" secondAttribute="centerX" id="fJo-Ng-7Ta"/>
+                            <constraint firstItem="nuh-ri-6fh" firstAttribute="top" secondItem="HJz-g4-aOA" secondAttribute="bottom" constant="8" id="hHW-ga-Fk7"/>
+                            <constraint firstItem="5qQ-2z-JX8" firstAttribute="top" secondItem="nuh-ri-6fh" secondAttribute="bottom" constant="30" id="qN1-iD-fLY"/>
+                            <constraint firstAttribute="centerX" secondItem="nuh-ri-6fh" secondAttribute="centerX" id="ty6-xH-thB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="986-7a-nIz" id="4ne-o1-Hmm"/>
+                        <outlet property="bannerView" destination="NhH-wZ-23y" id="IZ4-tx-zc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfQ-ao-wMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="-1035"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Hkn-ds-44N">
+            <objects>
+                <tabBarController id="hud-b8-Ya8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9PC-ep-TFw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="l2G-k5-gci" kind="relationship" relationship="viewControllers" id="l0K-bo-Rgd"/>
+                        <segue destination="Wa2-R6-7Ho" kind="relationship" relationship="viewControllers" id="d4x-az-epb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIM-uL-YbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2771" y="-691"/>
+        </scene>
+        <!--Banner-->
+        <scene sceneID="gNy-RP-qcz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l2G-k5-gci" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Banner" id="D4o-vI-y70"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fvv-r3-5di">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gp6-K4-Tkf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pj9-qc-KT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1924" y="-1035"/>
+        </scene>
+        <!--Interstitial-->
+        <scene sceneID="Glh-be-oxF">
+            <objects>
+                <navigationController id="Wa2-R6-7Ho" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Interstitial" id="k1y-Pr-H6L"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3V9-rw-ap5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BWO-iV-58F" kind="relationship" relationship="rootViewController" id="j31-ic-dnU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aze-4c-MEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1924" y="-322"/>
+        </scene>
+        <!--Interstitial View Controller-->
+        <scene sceneID="mi4-u1-cdk">
+            <objects>
+                <viewController id="BWO-iV-58F" customClass="InterstitialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L8y-8M-JJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSK-Li-OpX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t9d-eb-FFF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DFP Interstitial Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqK-Wi-Wdg">
+                                <rect key="frame" x="174" y="70" width="252" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXu-3J-JGw">
+                                <rect key="frame" x="232" y="129" width="136" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="SeW-Vu-NEI"/>
+                                    <constraint firstAttribute="height" constant="30" id="nnq-kd-A2F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Fetch Ad">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAd:" destination="BWO-iV-58F" eventType="touchUpInside" id="VgL-AE-CAX"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Hl-Mbx">
+                                <rect key="frame" x="282" y="210" width="37" height="37"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qqK-Wi-Wdg" secondAttribute="centerX" id="C2v-cE-dFx"/>
+                            <constraint firstAttribute="centerX" secondItem="jXu-3J-JGw" secondAttribute="centerX" id="fle-TV-Apk"/>
+                            <constraint firstAttribute="centerX" secondItem="96Z-Hl-Mbx" secondAttribute="centerX" id="fyK-Us-gy6"/>
+                            <constraint firstItem="jXu-3J-JGw" firstAttribute="top" secondItem="qqK-Wi-Wdg" secondAttribute="bottom" constant="30" id="hEw-Xn-TuN"/>
+                            <constraint firstItem="qqK-Wi-Wdg" firstAttribute="top" secondItem="L8y-8M-JJf" secondAttribute="bottom" constant="6" id="nhp-fa-jg9"/>
+                            <constraint firstItem="96Z-Hl-Mbx" firstAttribute="top" secondItem="jXu-3J-JGw" secondAttribute="bottom" constant="51" id="w08-ZP-wct"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lMY-JM-uCi">
+                        <barButtonItem key="leftBarButtonItem" id="vzm-rz-Klr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="EZA-bj-Heb">
+                                <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonClicked:" destination="BWO-iV-58F" eventType="touchUpInside" id="H9C-RP-4GI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="XQx-Iw-1dU">
+                            <connections>
+                                <action selector="tappedSettings:" destination="BWO-iV-58F" id="QJf-an-V6y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="96Z-Hl-Mbx" id="mOv-FP-Hbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k81-VK-O1B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146" y="-322"/>
+        </scene>
+    </scenes>
+</document>
