@@ -1,13 +1,19 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.7.0)
-  - RFMAdSDK (4.1.0)
+  - Google-Mobile-Ads-SDK (7.8.1)
+  - RFMAdSDK (4.2.0)
+  - RFMSDKAdapter-iOS-DFP (3.1.5):
+    - Google-Mobile-Ads-SDK
+    - RFMAdSDK
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
-  - RFMAdSDK (~> 4.1)
+  - RFMSDKAdapter-iOS-DFP (~> 3.1.5)
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: d290e523a6e2f223256abcbf8e0c778b55b1f04e
-  RFMAdSDK: 57083088f9b86de3385cbd910892029f9f283a73
+  Google-Mobile-Ads-SDK: 3c2a6656117989469bfe7645640aa1de024a4c6c
+  RFMAdSDK: c5aa1e4345a41f9e861d7ee0b0728ab7b77da35e
+  RFMSDKAdapter-iOS-DFP: 3a751b15c56ab21745011186b89bf4ed48461ecb
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 1b52c5f434454e3d29755dbeb48c368c8cf8d872
+
+COCOAPODS: 1.0.0

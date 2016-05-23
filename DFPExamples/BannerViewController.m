@@ -52,7 +52,7 @@
     if(self.requestFastLane) {
         // fastlane request
         //        self.fastlaneRequest.fetchOnlyVideoAds = YES;
-        RFMFastLane *fastLane = [[RFMFastLane alloc] initWithAdView:self.bannerView delegate:self];
+        RFMFastLane *fastLane = [[RFMFastLane alloc] initWithSize:self.bannerView.frame.size delegate:self];
         [fastLane preFetchAdWithParams:self.fastlaneRequest];
     } else {
         self.dfpRequest.customTargeting = nil;

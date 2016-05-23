@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141A516E1C7FC42200F7C0B0 /* RFMAdmobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A516B1C7FC42200F7C0B0 /* RFMAdmobAdapter.m */; };
-		141A516F1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A516D1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.m */; };
 		14D404B41A8C43F90099330F /* SecondBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D404B31A8C43F90099330F /* SecondBannerViewController.m */; };
-		4CE0D664F344E86EFFEE0D5D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F892067CF32231EBEFF42B /* libPods.a */; };
+		490CD9AB4572CB054FE596F9 /* libPods-DFPExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0201D5A33240CBFBE2D07B7 /* libPods-DFPExamples.a */; };
 		83905A8D1C7F954800C09B11 /* RFMPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83905A8C1C7F954800C09B11 /* RFMPopoverViewController.m */; };
 		83D2C4B21C6EC12300A1FD3D /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D2C4B11C6EC12300A1FD3D /* InterstitialViewController.m */; };
 		83E3A60E1C725E1600850CED /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E3A60D1C725E1600850CED /* SettingsViewController.m */; };
@@ -22,12 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0348AC41C2A8DEB869C49285 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		03F892067CF32231EBEFF42B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		141A516A1C7FC42200F7C0B0 /* RFMAdmobAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMAdmobAdapter.h; sourceTree = "<group>"; };
-		141A516B1C7FC42200F7C0B0 /* RFMAdmobAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMAdmobAdapter.m; sourceTree = "<group>"; };
-		141A516C1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMAdmobInterstitialAdapter.h; sourceTree = "<group>"; };
-		141A516D1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMAdmobInterstitialAdapter.m; sourceTree = "<group>"; };
 		14D4049E1A8C38C70099330F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		14D404A01A8C38CD0099330F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		14D404A21A8C38D20099330F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -40,6 +32,8 @@
 		14D404B01A8C38F60099330F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		14D404B21A8C43F90099330F /* SecondBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondBannerViewController.h; sourceTree = "<group>"; };
 		14D404B31A8C43F90099330F /* SecondBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondBannerViewController.m; sourceTree = "<group>"; };
+		21053E19944E45FF08357836 /* Pods-DFPExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFPExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFPExamples/Pods-DFPExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF2647A9BB9ABC6FAC2F8E9 /* Pods-DFPExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFPExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFPExamples/Pods-DFPExamples.release.xcconfig"; sourceTree = "<group>"; };
 		83447FCA1C0406FD00BB9622 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		83447FCC1C04070B00BB9622 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		83905A8B1C7F954800C09B11 /* RFMPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMPopoverViewController.h; sourceTree = "<group>"; };
@@ -57,7 +51,7 @@
 		CF12E28919A6C783001EB38A /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		CF12E28C19A6C783001EB38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF12E28E19A6C783001EB38A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F0BFA2982E63329B79BAA526 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E0201D5A33240CBFBE2D07B7 /* libPods-DFPExamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DFPExamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,22 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE0D664F344E86EFFEE0D5D /* libPods.a in Frameworks */,
+				490CD9AB4572CB054FE596F9 /* libPods-DFPExamples.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		141A51691C7FC42200F7C0B0 /* RFM-DFPAdapter */ = {
+		259E3372B08769AC595D6D9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				141A516A1C7FC42200F7C0B0 /* RFMAdmobAdapter.h */,
-				141A516B1C7FC42200F7C0B0 /* RFMAdmobAdapter.m */,
-				141A516C1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.h */,
-				141A516D1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.m */,
+				21053E19944E45FF08357836 /* Pods-DFPExamples.debug.xcconfig */,
+				5BF2647A9BB9ABC6FAC2F8E9 /* Pods-DFPExamples.release.xcconfig */,
 			);
-			path = "RFM-DFPAdapter";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		83905A8A1C7F954800C09B11 /* Helpers */ = {
@@ -107,7 +99,7 @@
 				14D404A21A8C38D20099330F /* AVFoundation.framework */,
 				14D404A01A8C38CD0099330F /* AudioToolbox.framework */,
 				14D4049E1A8C38C70099330F /* AdSupport.framework */,
-				03F892067CF32231EBEFF42B /* libPods.a */,
+				E0201D5A33240CBFBE2D07B7 /* libPods-DFPExamples.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,11 +107,10 @@
 		CF12E27519A6C783001EB38A = {
 			isa = PBXGroup;
 			children = (
-				141A51691C7FC42200F7C0B0 /* RFM-DFPAdapter */,
 				CF12E28019A6C783001EB38A /* DFPExamples */,
 				CF12E27F19A6C783001EB38A /* Products */,
-				E02BCE304FFEE28258E0D82D /* Pods */,
 				C0A1A8FD7C2D71026C4E8506 /* Frameworks */,
+				259E3372B08769AC595D6D9E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,15 +152,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E02BCE304FFEE28258E0D82D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0348AC41C2A8DEB869C49285 /* Pods.debug.xcconfig */,
-				F0BFA2982E63329B79BAA526 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,12 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF12E29E19A6C783001EB38A /* Build configuration list for PBXNativeTarget "DFPExamples" */;
 			buildPhases = (
-				23B0F57C7990D083607FB3D9 /* Check Pods Manifest.lock */,
+				E0D5B07B225B9B03D4741001 /* 📦 Check Pods Manifest.lock */,
 				CF12E27A19A6C783001EB38A /* Sources */,
 				CF12E27B19A6C783001EB38A /* Frameworks */,
 				CF12E27C19A6C783001EB38A /* Resources */,
-				D8A5CCF5EFFDF7D3F8DD86E0 /* Copy Pods Resources */,
-				FD3497E7CEBA657B2C386277 /* Embed Pods Frameworks */,
+				09F9872F138F8BD8495AE5CC /* 📦 Embed Pods Frameworks */,
+				5311EEBC5F2B4F6372F74779 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,49 +220,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23B0F57C7990D083607FB3D9 /* Check Pods Manifest.lock */ = {
+		09F9872F138F8BD8495AE5CC /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFPExamples/Pods-DFPExamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5311EEBC5F2B4F6372F74779 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFPExamples/Pods-DFPExamples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D5B07B225B9B03D4741001 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D8A5CCF5EFFDF7D3F8DD86E0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD3497E7CEBA657B2C386277 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -293,10 +275,8 @@
 				CF12E28A19A6C783001EB38A /* BannerViewController.m in Sources */,
 				CF12E28719A6C783001EB38A /* AppDelegate.m in Sources */,
 				83E3A60E1C725E1600850CED /* SettingsViewController.m in Sources */,
-				141A516F1C7FC42200F7C0B0 /* RFMAdmobInterstitialAdapter.m in Sources */,
 				83D2C4B21C6EC12300A1FD3D /* InterstitialViewController.m in Sources */,
 				14D404B41A8C43F90099330F /* SecondBannerViewController.m in Sources */,
-				141A516E1C7FC42200F7C0B0 /* RFMAdmobAdapter.m in Sources */,
 				83905A8D1C7F954800C09B11 /* RFMPopoverViewController.m in Sources */,
 				CF12E28419A6C783001EB38A /* main.m in Sources */,
 			);
@@ -396,7 +376,7 @@
 		};
 		CF12E29F19A6C783001EB38A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0348AC41C2A8DEB869C49285 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 21053E19944E45FF08357836 /* Pods-DFPExamples.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -414,7 +394,7 @@
 		};
 		CF12E2A019A6C783001EB38A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0BFA2982E63329B79BAA526 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5BF2647A9BB9ABC6FAC2F8E9 /* Pods-DFPExamples.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
